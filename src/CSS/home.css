@@ -1,0 +1,145 @@
+/* HOME.CSS - Styles Specific to the Home Page */
+
+/* Introduction Section */
+/* Style for Welcome Header */
+.welcome-header {
+  display: block; /* Ensure it is treated as a block-level element */
+  width: 100%; /* Span the full width of the viewport */
+  text-align:start; /* Center the text horizontally */
+  font-size: 4rem; /* Default size for desktop */
+  color: #222222;
+  margin: 1rem 10.5rem; /* Add vertical spacing */
+  position: relative; /* Default positioning */
+  z-index: 10; /* Ensure it appears above other content */
+}
+
+
+
+
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.txt-section {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.header2 {
+  color: #222222;
+  font-size: 5 rem;
+}
+.txt-section p {
+  font-size: 1.3125rem;
+  color: #333333;
+}
+
+
+#connect-btn {
+  background-color: #9d4a68;;
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 30px; /* Right under paragraph */
+  
+}
+#connect-btn:hover {
+  background-color: #a81845;
+}
+/* Image Section */
+.img-section {
+  
+  display: flex;
+  flex-direction: column; /* Stack image and buttons */
+  align-items:center; /* Center buttons under the image */
+  gap: 20px; /* Space between image and buttons */
+ 
+   /* Adjust the vertical positioning to lower the image */
+}
+
+.img-section .image-container {
+  opacity: 0; /* Start hidden */
+  visibility: hidden; /* Hide from layout */
+  position: absolute; /* Overlap each other */
+  transition: opacity 0.5s ease, visibility 0s 0.5s; /* Smooth fade effect */
+}
+
+.img-section .image-container.active {
+  opacity: 1; /* Show active image */
+  visibility: visible; /* Make visible in layout */
+  position: relative; /* Restore layout */
+  transition: opacity 0.5s ease, visibility 0s 0s; /* Smooth fade effect */
+}
+
+.img-section img {
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Navigation Buttons */
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 80px; /* Space between buttons */
+}
+
+.navigation-buttons img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.navigation-buttons img:hover {
+  transform: scale(1.2); /* Slight zoom effect on hover */}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img-section {
+    order: 0;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-section {
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .img-section img {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .welcome-header {
+    font-size: 3rem; /* Adjust font size for tablets */
+    margin: 0.5rem 0; /* Adjust spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-header {
+    font-size: 2.5rem; /* Further reduce font size for small screens */
+      margin: 0.5rem auto;}}

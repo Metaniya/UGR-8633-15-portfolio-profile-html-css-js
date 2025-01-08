@@ -1,0 +1,143 @@
+/* General Container for Center Alignment */
+.container {
+  max-width: 1200px; /* Limit the content width */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 20px; /* Add some padding for spacing */
+}
+
+/* About Me Section Layout */
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items at the top */
+  margin-top: 30px; /* Space below the header */
+  gap: 200px; /* Small gap between text and image */
+}
+
+/* Text Section */
+.text-section {
+  width: 40%; /* Text occupies 40% of the container */
+  align-items: start;
+}
+
+.text-section h1 {
+  font-size: 80px;
+  color: #222222; /* Match global color scheme */
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.text-section p {
+  font-size: 21px;
+  color: #333333;
+}
+
+/* Image Section */
+.image-section {
+  width: 60%; /* Image takes up 60% of the container */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+}
+
+.image-section img {
+  width: 100%; /* Occupy the full width of its container */
+  height: 500px; /* Set the desired height for the image */
+  object-fit: cover; /* Ensures the image fills the space while maintaining aspect ratio */
+  border-radius: 10px; /* Optional rounded corners */
+  overflow: hidden; /* Ensures content outside the set height is cut off */
+}
+
+/* Cards Section */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center cards horizontally */
+  margin-top: 50px; /* Add larger space above the cards */
+  margin-bottom: 50px; /* Add larger space below the cards */
+}
+
+/* Individual Card */
+/* Individual Card */
+.card {
+  flex: 1 1 calc(25% - 20px); /* Each card takes 25% width minus gap space */
+  max-width: 300px; /* Restrict maximum width for each card */
+  height: 300px; /* Set a fixed height for all cards */
+  background-color: #fcf0f4; /* Light pink card background */
+  padding: 15px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center; /* Center-align text inside cards */
+  display: flex;
+  flex-direction: column; /* Ensure content stacks vertically */
+  justify-content: space-between; /* Space out card content evenly */
+}
+
+/* Card Image */
+.card img {
+  width: calc(100% - 30px); /* Full width minus padding */
+  height: 100px; /* Set a consistent height for all images */
+  object-fit: cover; /* Ensures the image fills the space while maintaining aspect ratio */
+  border-radius: 10px; /* Match card corner radius */
+  margin: 0 auto; /* Center the image horizontally */
+  padding: 5px; /* Small padding around the image */
+  overflow: hidden; /* Ensures content outside the set height is cut off */
+}
+
+/* Card Title */
+.card h3 {
+  font-size: 1.2rem;
+  color: #600020 ; /* Match global color scheme */
+  margin: 10px 0;
+}
+
+/* Card Description */
+.card p {
+  font-size: 0.9rem;
+  color: #333; /* Dark text for readability */
+}
+.card video {
+  width: 100%; /* Full width of the card */
+  height: 100px; /* Maintain the video's aspect ratio */
+  border-radius: 10px; /* Match card corner radius */
+  overflow: hidden;
+}
+
+/* Responsive Design for Cards */
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 calc(50% - 10px); /* Two cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 1 1 100%; /* Single card per row on very small screens */
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    align-items: center; /* Center-align items */
+  }
+
+  .text-section,
+  .image-section {
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  .image-section img {
+    max-height: 250px; /* Slightly smaller image for small screens */
+  }
+}
+
+/* Vertical Spacing */
+.cards-container {
+  row-gap: 30px; /* Add vertical spacing between rows of cards */
+}
+
+footer {
+  margin-top: 50px; /* Add space above the footer */
+}

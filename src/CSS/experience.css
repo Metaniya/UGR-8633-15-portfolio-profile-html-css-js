@@ -1,0 +1,144 @@
+/* Main Section */
+main {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  gap: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Work Experience Section */
+.work-experience {
+  flex: 2;
+  margin: 20px;
+}
+
+.work-experience .experience-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* Space between image and text */
+  margin-bottom: 20px;
+  flex-direction: row;
+}
+
+.work-experience img {
+  height: 100px;
+  width: 120px;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.work-experience h2 {
+  color: #222222;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.work-experience p {
+  color: #333333;
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.5;
+  flex-grow: 1; /* Allows the paragraph to expand fully */
+  width: auto;
+}
+
+.resume-link {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #9d4a68;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resume-link:hover {
+  background-color: #a81845;
+}
+
+/* Additional Experience Section (Aside) */
+.additional-experience {
+  flex: 1;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.additional-experience h1 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.additional-experience article {
+  margin-bottom: 20px;
+}
+
+.additional-experience article h2 {
+  font-size: 1.2rem;
+  color: #34495e;
+}
+
+.additional-experience article p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .work-experience .experience-item {
+    flex-direction: row; /* Keep image beside the text */
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .work-experience img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+  }
+
+  .work-experience h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .work-experience p {
+    font-size: 14px;
+    text-align: left;
+    width: 100%; /* Paragraph takes full width beside the image */
+  }
+
+  .resume-link {
+    margin: 10px 0;
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .additional-experience {
+    padding: 15px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .additional-experience h1 {
+    font-size: 1.2rem;
+  }
+
+  .additional-experience article h2 {
+    font-size: 1rem;
+  }
+
+  .additional-experience article p {
+    font-size: 0.9rem;
+  }
+}

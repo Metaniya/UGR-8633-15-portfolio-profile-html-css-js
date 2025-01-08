@@ -1,0 +1,141 @@
+/* Center the entire content of the page */
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers the section horizontally */
+  margin: 2rem auto; /* Center the content within the page */
+  max-width: 1200px; /* Constrain the content width for better visuals */
+  gap: 50px; /* Space between image and text */
+  flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+  text-align: left; /* Left-align the text content by default */
+}
+
+/* Left Section: Profile Image */
+.contact-section .image-container {
+  flex: 0 0 30%; /* Occupy 30% of the container width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section .contact-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Crop the image without stretching */
+  border: 3px solid #e91e63; /* Add a border */
+  box-shadow: 0 0 15px rgba(233, 30, 99, 0.5); /* Add initial glow */
+  animation: gentle-glow 3s ease-in-out infinite; /* Gentle pulsing effect */
+}
+
+/* Right Section: Contact Info */
+.contact-section .contact-info {
+  flex: 1; /* Use the remaining space for the text content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align content to the left */
+  padding: 1rem;
+}
+
+/* Title and Text Styles */
+.contact-section h1 {
+  font-size: 80px;
+  margin-bottom: 1rem;
+  color: #222;
+  text-align: left; /* Left-align title */
+}
+
+.contact-section p {
+  font-size:16px;
+  margin-bottom: 2rem;
+  color: #333;
+  text-align: left; /* Left-align paragraph */
+}
+
+/* Social Media Icons */
+.contact-section ul {
+  display: flex;
+  gap: 1rem; /* Add space between icons */
+  list-style: none;
+  padding: 0;
+}
+
+.contact-section ul li a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Make icons circular */
+  transition: transform 0.3s ease;
+  animation: pulse 3s infinite; /* Smooth pulsing effect */
+}
+
+.contact-section ul li a img:hover {
+  transform: scale(1.1); /* Add hover effect */
+}
+
+/* Email Button */
+.email-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem; /* Adjust button padding */
+  text-align: center;
+  background-color: #9d4a68;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.email-link:hover {
+  background-color: #a81845;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column; /* Stack the image and text vertically */
+    text-align: center; /* Center-align content for smaller screens */
+    gap: 20px;
+  }
+
+  .contact-section .image-container {
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-section .contact-info {
+    align-items: center; /* Center-align the text content */
+    text-align: center; /* Center-align text */
+  }
+
+  .contact-section h1 {
+    font-size: 2rem;
+  }
+
+  .contact-section p {
+    font-size: 0.9rem;
+  }
+
+  .email-link {
+    width: auto; /* Adjust width for smaller screens */
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .contact-section ul {
+    justify-content: center; /* Center-align the social media icons */
+  }
+}
+
+/* Define the Keyframes for Gentle Pulsing Glow */
+@keyframes gentle-glow {
+  0% {
+    box-shadow: 0 0 15px rgba(233, 30, 99, 0.5); /* Initial glow */
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(233, 30, 99, 0.7); /* Intensified glow */
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(233, 30, 99, 0.5); /* Back to initial glow */
+  }
+}
