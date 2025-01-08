@@ -1,109 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/CSS/global.css" />
+    <link rel="stylesheet" href="/CSS/home.css" />
   </head>
   <body>
     <header>
+      <!-- Profile Image -->
+      <img src="/images/profile.jpg" alt="Profile Picture" class="profile-pic" />
+    
+      <!-- Hamburger Menu Icon -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div> 
+    
+      <!-- Navigation Menu -->
       <nav>
-        <ul>
+        <ul class="menu">
           <li><a href="home.html">Home</a></li>
           <li><a href="about-me.html">About Me</a></li>
           <li><a href="education.html">Education</a></li>
           <li><a href="experience.html">Experience</a></li>
-          <li><a href="contact-me.html">Contact me</a></li>
+          <li><a href="contact-me.html">Contact</a></li>
         </ul>
       </nav>
-      <img
-        src="images/profile.jpg"
-        alt="Portrait picture"
-        class="profile-pic"
-      >
     </header>
+    
+    
 
-    <section>
-      <div class="txt-section">
-        <h1>"Welcome to My Website"</h1>
-        <h2>Hi, I'm Metaniya Shiferaw.</h2>
-        <p>
-          I’m a software engineer with a passion for web development and
-          problem-solving. I love creating user-friendly websites and programs
-          that not only work seamlessly but also leave a lasting impression.
-          This website is a glimpse into my journey—my education, career path,
-          and the projects that have shaped my skills. But it’s not all about
-          work! You’ll also get to know me personally, from my hobbies to the
-          interests that fuel my creativity. Feel free to look around, and let’s
-          connect if something sparks your curiosity! 😊
-        </p>
-      </div>
-
-      <div class="img-section">
-        <div id="image1">
-          <img src="/src/images/profile.jpg" alt="Profile Picture" >
+    <main>
+      
+      <section class="intro">
+        <h1 class="welcome-header">"Welcome to My Website"</h1>
+        <div class="txt-section">
+           
+          <p>
+            Welcome to my personal website, a space where creativity meets connection! Here, you’ll discover insights into my life, from my hobbies and adventures to my educational journey and career aspirations. This website serves as a digital portfolio, showcasing my passions, achievements, and the experiences that shape who I am. Whether you're here to explore my CV, learn about my interests, or simply get inspired, I invite you to dive in and get to know me better!
+          </p>
+          <h1 class="header2">Hi, I'm Metaniya Shiferaw.</h1>
+          <p>
+            I’m a software engineer with a passion for web development and problem-solving. I love creating user-friendly websites and programs that not only work seamlessly but also leave a lasting impression. This website is a glimpse into my journey—my education, career path, and the projects that have shaped my skills. But it’s not all about work! You’ll also get to know me personally, from my hobbies to the interests that fuel my creativity. Feel free to look around, and let’s connect if something sparks your curiosity! 😊
+          </p>
+          <button id="connect-btn">Let's Connect</button>
         </div>
 
-        <div id="image2">
-          <img
-            src="/src/images/web-developer.jpg"
-            alt="Me as a Web Developer"
-          >
-        </div>
+        <div class="img-section">
+          <!-- Images -->
+          <div id="image1" class="image-container active">
+            <img src="/images/profile.jpg" alt="Profile Picture" />
+          </div>
+          <div id="image2" class="image-container">
+            <img src="/images/web-developer.jpg" alt="Me as a Web Developer" />
+          </div>
+          <div id="image3" class="image-container">
+            <img src="/images/painting.jpg" alt="Me Painting" />
+          </div>
 
-        <div id="image3">
-          <img src="/src/images/painting.jpg" alt="Me Painting" >
+          <!-- Navigation Buttons -->
+          <div class="navigation-buttons">
+            <img src="/images/left-arrow.png" alt="Previous" class="prev-btn" />
+            <img src="/images/right-arrow.png" alt="Next" class="next-btn" />
+          </div>
         </div>
-
-        <div class="navigation-buttons">
-          <a href="#image1" title="Previous">
-            <img src="/src/images/left-arrow.png" alt="Previous" >
-          </a>
-          <a href="#image2" title="Next">
-            <img src="/src/images/right-arrow.png" alt="Next" >
-          </a>
-        </div>
-      </div>
-
-      <br>
-      <br>
-      <button>Let's Connect</button>
-    </section>
+      </section>
+    </main>
 
     <footer>
-      <div class="remember">
-        <h3>Remember:</h3>
-        <p>
-          "The only limit to our realization of tomorrow is our doubts of
-          today." - Franklin D. Roosevelt
-        </p>
-      </div>
+      <div class="footer-container">
+        <!-- First Column -->
+        <div class="footer-column">
+          <h3>Remember!</h3>
+          <p>
+            “The only limit to our realization of tomorrow<br />is our doubts of today.”
+          </p>
+          <p>- Franklin D. Roosevelt</p>
+        </div>
 
-      <div class="signature">
-        <h3>Signature:</h3>
-        <p>Made by Metaniya Shiferaw</p>
-      </div>
+        <!-- Second Column -->
+        <div class="footer-column">
+          <h3>Signature</h3>
+          <p>Made by Metaniya Shiferaw</p>
+          <hr />
+          <p>© 2024 Metaniya Shiferaw.<br />All rights reserved.</p>
+        </div>
 
-      <div class="reach-me">
-        <h3>Reach Me:</h3>
-        <div class="social-links">
-          <a href="https://t.me/janu1111" target="_blank">
-            <img src="/src/images/tg.png" alt="telegram" >
-          </a>
-          <a
-            href="https://linkedin.com/in/metaniya-shiferaw-444814266"
-            target="_blank"
-          >
-            <img src="/src/images/lkd.png" alt="LinkedIn" >
-          </a>
-          <a href="https://github.com/Metaniya" target="_blank">
-            <img src="/src/images/git.png" alt="GitHub" >
-          </a>
+        <!-- Third Column -->
+        <div class="footer-column">
+          <h3>Reach Me</h3>
+          <div class="social-links">
+            <a href="#"><img src="/images/lkd.png" alt="LinkedIn" /></a>
+            <a href="#"><img src="/images/git.png" alt="GitHub" /></a>
+            <a href="#"><img src="/images/tg.png" alt="Telegram" /></a>
+            <a href="#"><img src="/images/ig.png" alt="Instagram" /></a>
+          </div>
         </div>
       </div>
-
-      <hr>
-      <p>&copy; 2024 Metaniya Shiferaw. All rights reserved.</p>
     </footer>
+    <div id="connect-modal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Let's Connect!</h2>
+        <p>
+          Reach me via email at
+          <a href="mailto:metaniyashiferaw571@gmail.com"
+            >metaniyashiferaw571@gmail.com</a
+          >
+        </p>
+        <button id="close-modal">Close</button>
+      </div>
+    <script src="/js/script.js"></script>
   </body>
 </html>
