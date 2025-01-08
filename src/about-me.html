@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about-me</title>
+    <title>contact-me</title>
     <link rel="stylesheet" href="/CSS/global.css" />
-    <link rel="stylesheet" href="/CSS/aboutme.css" />
-    
+    <link rel="stylesheet" href="/CSS/contact.css" />
+    <script src="/js/script.js"></script>
   </head>
   <body>
     <header>
@@ -32,65 +32,56 @@
       </nav>
     </header>
 
-    <div class="container">
-      <section>
-        <div class="text-section">
-          <h1>About Me</h1>
-          <p>
-            I am a web developer with a passion for creating engaging
-            user-friendly websites. Here's a bit more about me.
-          </p>
+    <main>
+      <section class="contact-section">
+        <div class="image-container">
+          <img
+            src="/images/profile.jpg"
+            alt="My Contact Profile"
+            class="contact-pic"
+          />
         </div>
-        <div class="image-section">
-          <img src="/images/love-art.jpg" alt="About Me Image" />
+
+        <div class="contact-info">
+          <h1>Contact Me</h1>
+          <p>
+            Feel free to reach out to me through any of the platforms below. I’m
+            always open to new opportunities and collaborations.
+          </p>
+          <ul>
+            <li>
+              <a
+                href="https://web.facebook.com/profile.php?id=100092844207119"
+                target="_blank"
+              >
+                <img src="/images/facebook_logo.png" alt="Facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="https://t.me/janu1111" target="_blank">
+                <img src="/images/telegram.jfif" alt="telegram" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/metaniya-shiferaw-444814266"
+                target="_blank"
+              >
+                <img src="/images/linkdn.png" alt="LinkedIn" />
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/metaniya_/" target="_blank">
+                <img src="/images/insta.jfif" alt="Instagram" />
+              </a>
+            </li>
+          </ul>
+          <a href="mailto:metaniyashiferaw571@email.com" class="email-link">
+            Email Me
+          </a>
         </div>
       </section>
-    </div>
-
-    <!-- Cards Section -->
-    <div class="cards-container">
-      <div class="card">
-        <img src="/images/red.jpg" alt="Card 1" />
-        <h3>Favorite Color</h3>
-        <p>
-          I love all colors, but cherry red holds a special spot in my heart.
-        </p>
-      </div>
-      <div class="card">
-        <img src="/images/potato.jpg" alt="Card 2" />
-        <h3>Favorite Food</h3>
-        <p>Potatoes in any form—stew, fries, roasted... you name it!</p>
-      </div>
-      <div class="card">
-        <img src="/images/painting.jpg" alt="Card 3" />
-        <h3>Hobbies</h3>
-        <p>Painting is my escape—it's where creativity meets relaxation.</p>
-      </div>
-      <div class="card">
-        <img src="/images/animals.jpg" alt="Card 4" />
-        <h3>Animal Lover</h3>
-        <p>
-          I’m a cat person, but my love for animals goes beyond just felines. 🐾
-        </p>
-      </div>
-      <div class="card">
-        <img src="/images/animation.jpg" alt="Card 5" />
-        <h3>A Fun Skill I’m Learning</h3>
-        <p>I’m learning animation, and it’s been an exciting journey so far!</p>
-      </div>
-      <div class="card">
-        <video controls>
-          <source src="/video/mia's-video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <h3>Meet My Cat Mia</h3>
-        <p>Mia is the best companion, and she makes every day brighter!</p>
-      </div>
-      <div class="card">
-        <h3>Fun Fact</h3>
-        <p>Painting is my escape—it’s where creativity meets relaxation.</p>
-      </div>
-    </div>
+    </main>
 
     <footer>
       <div class="footer-container">
@@ -127,6 +118,5 @@
         </div>
       </div>
     </footer>
-    <script src="/js/script.js"></script>
   </body>
 </html>
